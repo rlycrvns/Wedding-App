@@ -41,12 +41,11 @@ router.post('/', async (req, res) => {
 // @route    PUT api/songs/like/:id
 // @desc     Like a post
 // @access   Public
-router.put('/like/:id', async (req, res) => {
+router.put('/likes/:id', async (req, res) => {
   try {
     const song = await Song.findById(req.params.id);
-
+    song.likes++;
     await song.save();
-
     res.json(song.likes);
   } catch (err) {
     console.error(err.message);
