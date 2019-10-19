@@ -26,7 +26,8 @@ router.post('/', async (req, res) => {
   try {
     const newSong = new Song({
       title: req.body.title,
-      artist: req.body.artist
+      artist: req.body.artist,
+      name: req.body.name
     });
 
     const song = await newSong.save();
