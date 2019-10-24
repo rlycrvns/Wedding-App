@@ -16,9 +16,9 @@ class AppNav extends Component {
 
   render() {
     return (
-      <Navbar className='fixed-bottom' bg='light' expand='xl'>
+      <Navbar className='fixed-bottom' expand='xl'>
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='ml-auto mr-auto ' as='ul'>
+          <Nav as='ul'>
             <Nav.Item as='li'>
               <NavLink className='nav-link' exact to='/'>
                 Home
@@ -37,6 +37,11 @@ class AppNav extends Component {
             <Nav.Item as='li'>
               <NavLink className='nav-link' to='/components/suggestasong'>
                 Suggest a Song
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item as='li'>
+              <NavLink className='nav-link' to='!#' target='_blank'>
+                RSVP
               </NavLink>
             </Nav.Item>
           </Nav>

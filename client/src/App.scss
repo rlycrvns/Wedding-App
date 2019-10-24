@@ -1,3 +1,4 @@
+//breakpoints
 $xs-min: 320px;
 $xs-max: 767px;
 $sm-min: 767px;
@@ -7,3 +8,45 @@ $md-max: 1199px;
 $lg-min: 1200px;
 $lg-max: 1500px;
 $xl-min: 1501px;
+
+//colors
+$rust: #cd6647;
+$lite-green: #c4d0cc;
+$dark-green: #718878;
+$pink: #fee5e0;
+$bg-pink: #fff5f4;
+
+//fonts
+$ff-fancy: 'La Belle Aurore', cursive;
+$ff-body: 'Julius Sans One', 'Roboto', sans-serif;
+
+//body
+body {
+  background-color: $bg-pink;
+}
+
+//nav
+nav {
+  background-color: $bg-pink;
+  .navbar-collapse {
+    .navbar-nav {
+      @media (max-width: $xs-max) {
+        margin-bottom: 20px;
+      }
+      .nav-item {
+        background: url('../src/img/lite-green-stroke.png') no-repeat;
+        background-size: auto;
+        background-position: center 60%;
+        @media (max-width: $xs-max) {
+          padding-bottom: 20px;
+          text-align: center;
+          a {
+            font-size: 36px;
+            color: $rust;
+            font-family: $ff-body;
+          }
+        }
+      }
+    }
+  }
+}
