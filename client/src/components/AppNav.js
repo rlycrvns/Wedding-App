@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import 'hamburgers/dist/hamburgers.min.css';
+import HamburgerSpin from 'burger';
 
 const AppNav = props => {
   const [collapsed, setCollapsed] = useState(true);
@@ -67,16 +67,7 @@ const AppNav = props => {
             </NavItem>
           </Nav>
         </Collapse>
-        {/* <NavbarToggler onClick={toggleNavbar} className='mr-auto ml-auto' /> */}
-        <button
-          onClick={toggleNavbar}
-          className='hamburger hamburger--spin mr-auto ml-auto collapsed'
-          type='button'
-        >
-          <span class='hamburger-box'>
-            <span class='hamburger-inner'></span>
-          </span>
-        </button>
+        <HamburgerSpin onClick={toggleNavbar} className='mr-auto ml-auto' />
       </Navbar>
     </header>
   );
