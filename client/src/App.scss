@@ -28,25 +28,52 @@ body {
 //nav
 nav {
   background-color: $bg-pink;
+  .navbar-brand {
+    display: block;
+    margin: 0 auto;
+    @media (max-width: $md-max) {
+      width: 120px;
+    }
+    @media (min-width: $lg-min) {
+      display: none;
+    }
+    img {
+      @media (max-width: $md-max) {
+        width: 120px;
+      }
+    }
+  }
   .navbar-collapse {
     .navbar-nav {
       @media (max-width: $xs-max) {
         margin-bottom: 20px;
       }
       .nav-item {
-        background: url('../src/img/lite-green-stroke.png') no-repeat;
-        background-size: auto;
-        background-position: center 60%;
-        @media (max-width: $xs-max) {
-          padding-bottom: 20px;
+        @media (max-width: $md-max) {
+          background: url('/img/lite-green-stroke.png') no-repeat;
+          background-size: auto;
+          background-position: center 75%;
+          padding-bottom: 15px;
           text-align: center;
-          a {
-            font-size: 36px;
+        }
+        @media (max-width: 374px) {
+          font-size: 22px;
+          padding-bottom: 5px;
+        }
+        a {
+          @media (max-width: $md-max) {
+            font-size: 30px;
             color: $rust;
             font-family: $ff-body;
+          }
+          @media (max-width: 374px) {
+            font-size: 22px;
           }
         }
       }
     }
   }
+  // .collapsing {
+  //   transition: height 0.35s ease-in-out;
+  // }
 }

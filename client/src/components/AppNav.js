@@ -16,11 +16,24 @@ class AppNav extends Component {
 
   render() {
     return (
-      <Navbar className='fixed-bottom' expand='xl'>
-        <Navbar.Collapse id='basic-navbar-nav'>
+      <Navbar className='fixed-bottom ' expand='xl'>
+        <Navbar.Collapse id='responsive-navbar-nav'>
+          <Navbar.Brand href='#home'>
+            <img
+              src='
+              /img/initials.png'
+              alt='JB + RC'
+              className='initials'
+            />
+          </Navbar.Brand>
           <Nav as='ul'>
             <Nav.Item as='li'>
-              <NavLink className='nav-link' exact to='/'>
+              <NavLink
+                onClick={() => this.toggle}
+                className='nav-link'
+                exact
+                to='/'
+              >
                 Home
               </NavLink>
             </Nav.Item>
@@ -40,7 +53,7 @@ class AppNav extends Component {
               </NavLink>
             </Nav.Item>
             <Nav.Item as='li'>
-              <NavLink className='nav-link' to='!#' target='_blank'>
+              <NavLink className='nav-link' to='/' target='_blank'>
                 RSVP
               </NavLink>
             </Nav.Item>
@@ -48,7 +61,7 @@ class AppNav extends Component {
         </Navbar.Collapse>
         <Navbar.Toggle
           className='ml-auto mr-auto'
-          aria-controls='basic-navbar-nav'
+          aria-controls='responsive-navbar-nav'
         />
       </Navbar>
     );
