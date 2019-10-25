@@ -1,71 +1,85 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React, { useState } from 'react';
+import { NavLink as RRNavLink } from 'react-router-dom';
+import {
+  Collapse,
+  Navbar,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from 'reactstrap';
+import 'hamburgers/dist/hamburgers.min.css';
 
-class AppNav extends Component {
-  state = {
-    isOpen: false
-  };
+const AppNav = props => {
+  const [collapsed, setCollapsed] = useState(true);
 
-  toggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  };
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
-  render() {
-    return (
-      <Navbar className='fixed-bottom ' expand='xl'>
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Navbar.Brand href='#home'>
+  return (
+    <header>
+      <Navbar className='fixed-bottom container-fluid' expand='xl'>
+        <Collapse isOpen={!collapsed} navbar>
+          <NavbarBrand href='#home'>
             <img
               src='
               /img/initials.png'
               alt='JB + RC'
               className='initials'
             />
-          </Navbar.Brand>
-          <Nav as='ul'>
-            <Nav.Item as='li'>
-              <NavLink
-                onClick={() => this.toggle}
-                className='nav-link'
-                exact
-                to='/'
-              >
+          </NavbarBrand>
+          <Nav navbar>
+            <NavItem>
+              <NavLink onClick={toggleNavbar} tag={RRNavLink} exact to='/'>
                 Home
               </NavLink>
-            </Nav.Item>
-            <Nav.Item as='li'>
-              <NavLink className='nav-link' to='/components/details'>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                onClick={toggleNavbar}
+                tag={RRNavLink}
+                to='/components/details'
+              >
                 Details
               </NavLink>
-            </Nav.Item>
-            <Nav.Item as='li'>
-              <NavLink className='nav-link' to='/components/ourstory'>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                onClick={toggleNavbar}
+                tag={RRNavLink}
+                to='/components/ourstory'
+              >
                 Our Story
               </NavLink>
-            </Nav.Item>
-            <Nav.Item as='li'>
-              <NavLink className='nav-link' to='/components/suggestasong'>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                onClick={toggleNavbar}
+                tag={RRNavLink}
+                to='/components/suggestasong'
+              >
                 Suggest a Song
               </NavLink>
-            </Nav.Item>
-            <Nav.Item as='li'>
-              <NavLink className='nav-link' to='/' target='_blank'>
+            </NavItem>
+            <NavItem>
+              <NavLink onClick={toggleNavbar} tag={RRNavLink} to='/'>
                 RSVP
               </NavLink>
-            </Nav.Item>
+            </NavItem>
           </Nav>
-        </Navbar.Collapse>
-        <Navbar.Toggle
-          className='ml-auto mr-auto'
-          aria-controls='responsive-navbar-nav'
-        />
+        </Collapse>
+        {/* <NavbarToggler onClick={toggleNavbar} className='mr-auto ml-auto' /> */}
+        <button
+          onClick={toggleNavbar}
+          className='hamburger hamburger--spin mr-auto ml-auto collapsed'
+          type='button'
+        >
+          <span class='hamburger-box'>
+            <span class='hamburger-inner'></span>
+          </span>
+        </button>
       </Navbar>
-    );
-  }
-}
+    </header>
+  );
+};
 
 export default AppNav;
