@@ -1,6 +1,6 @@
 //breakpoints
 $xs-min: 320px;
-$xxs-max: 400px;
+$xxs-max: 374px;
 $xs-max: 767px;
 $sm-min: 767px;
 $sm-max: 991px;
@@ -37,38 +37,50 @@ header {
   .navbar {
     padding: 0px;
     background-color: transparent;
-    .navbar-brand {
-      display: block;
-      margin: 0 auto;
-      @media (max-width: $md-max) {
-        width: 120px;
-      }
-      @media (min-width: $lg-min) {
-        display: none;
-      }
-      img {
+    .navbar-collapse {
+      .navbar-brand {
+        position: relative;
+        @media (min-width: 321px) {
+          bottom: -5%;
+        }
+        display: block;
+        margin: 0 auto;
         @media (max-width: $md-max) {
           width: 120px;
         }
+        @media (min-width: $lg-min) {
+          display: none;
+        }
+        img {
+          @media (max-width: $md-max) {
+            width: 120px;
+          }
+        }
       }
-    }
-    .navbar-collapse {
+      overflow: hidden;
+      transition: height 0.3s ease-in-out;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 0px !important;
       background-color: $bg-pink;
       .navbar-nav {
-        @media (max-width: $xs-max) {
-          margin-bottom: 20px;
+        position: relative;
+        @media (min-width: 321px) {
+          bottom: -8%;
         }
+        margin-bottom: 20px;
         .nav-item {
           @media (max-width: $md-max) {
             background: url('/img/lite-green-stroke.png') no-repeat;
             background-size: auto;
-            background-position: center 75%;
-            padding-bottom: 15px;
+            background-position: center 50%;
+            padding-bottom: 30px;
             text-align: center;
           }
-          @media (max-width: 374px) {
+          @media (max-width: $xxs-max) {
             font-size: 22px;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
           }
           a {
             @media (max-width: $md-max) {
@@ -83,8 +95,13 @@ header {
         }
       }
     }
+    .show {
+      height: 100vh !important;
+      display: block;
+    }
     .hamburger {
-      width: 150px;
+      margin-bottom: 10px;
+      width: 100px;
       border: 1px solid $dark-green;
       border-radius: 50px;
       background-color: $bg-pink;
@@ -167,7 +184,8 @@ header {
     background-position: center center;
     background-size: cover;
     .info {
-      padding: 20px 0px;
+      padding: 35px 0px;
+      margin-bottom: 150px;
       h2 {
         span {
           display: block;
@@ -185,8 +203,9 @@ header {
   }
 }
 footer {
+  padding-bottom: 20px;
   > span {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   span {
     display: block;
@@ -194,7 +213,7 @@ footer {
     font-family: $ff-body;
     font-size: 14px;
     color: $black;
-    line-height: 1.2;
+    line-height: 1.4;
     a {
       color: $rust;
     }
