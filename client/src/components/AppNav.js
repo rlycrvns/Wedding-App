@@ -8,16 +8,20 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import HamburgerSpin from 'burger';
+import { HamburgerSpin } from 'react-animated-burgers';
 
 const AppNav = props => {
   const [collapsed, setCollapsed] = useState(true);
+  const [inActive, setActive] = useState(false);
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
+    setActive(!inActive);
+  };
 
   return (
     <header>
-      <Navbar className='fixed-bottom container-fluid' expand='xl'>
+      <Navbar className='fixed-bottom' expand='xl'>
         <Collapse isOpen={!collapsed} navbar>
           <NavbarBrand href='#home'>
             <img
@@ -67,7 +71,12 @@ const AppNav = props => {
             </NavItem>
           </Nav>
         </Collapse>
-        <HamburgerSpin onClick={toggleNavbar} className='mr-auto ml-auto' />
+        <HamburgerSpin
+          onClick={toggleNavbar}
+          className='hamburger mr-auto ml-auto'
+          isActive={inActive}
+          barColor='#cd6647'
+        />
       </Navbar>
     </header>
   );

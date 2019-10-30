@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Details from './components/Details';
 import OurStory from './components/OurStory';
 import SuggestASong from './components/SuggestASong';
+import Footer from './components/Footer';
 
 const Main = () => (
   <main className='content'>
@@ -23,6 +24,7 @@ function App() {
     <div className='App'>
       <AppNav />
       <Main />
+      <Footer />
     </div>
   );
 }
