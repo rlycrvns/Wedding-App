@@ -1,0 +1,18 @@
+@import './variables.scss';
+footer {
+  padding-bottom: 20px;
+  > span {
+    padding-bottom: 10px;
+  }
+  span {
+    display: block;
+    text-align: center;
+    font-family: $ff-body;
+    font-size: 14px;
+    color: $black;
+    line-height: 1.4;
+    a {
+      color: $rust;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+//details
+#details {
+  h1 {
+    font-family: $ff-fancy;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    color: $rust;
+    background-image: url('/img/pink-stroke.png');
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    background-size: contain;
+  }
+  .info-body {
+    font-family: $ff-body;
+    text-align: center;
+    margin-bottom: 200px;
+    h2 {
+      color: $rust;
+      font-size: 26px;
+      padding-top: 20px;
+    }
+    h3 {
+      color: $dark-green;
+      a {
+        color: $dark-green;
+        font-size: 22px;
+      }
+      span {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+    }
+  }
+}

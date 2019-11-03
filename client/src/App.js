@@ -1,6 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import './App.scss';
+import './styles/nav.scss';
+import './styles/home.scss';
+import './styles/details.scss';
+import './styles/ourStory.scss';
+import './styles/suggestASong.scss';
+import './styles/rsvp.scss';
+import './styles/footer.scss';
 import AppNav from './components/AppNav';
 import Home from './components/Home';
 import Details from './components/Details';

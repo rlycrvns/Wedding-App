@@ -1,0 +1,82 @@
+@import './variables.scss';
+//Index
+#home {
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .heading {
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: url(/img/lite-green-stroke.png);
+      position: absolute;
+      transform: rotate(135deg);
+      right: -200px;
+      top: -90px;
+    }
+    &:after {
+      content: url(/img/lite-green-stroke.png);
+      position: absolute;
+      transform: rotate(135deg);
+      left: -236px;
+      bottom: 10px;
+    }
+    padding: 40px 0px;
+    h1 {
+      .h1Top,
+      .h1Bottom {
+        background-image: url('/img/pink-stroke.png');
+        background-repeat: no-repeat;
+        background-position: center 130%;
+        background-size: contain;
+        line-height: 1.4;
+      }
+      .h1Bottom {
+        background-image: url('/img/pink-stroke-inverted.png');
+      }
+      .plus-span {
+        padding-top: 10px;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-family: $ff-body;
+        font-size: 42px;
+        color: $dark-green;
+        line-height: 0.8;
+        @media (max-width: $xxs-max) {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+  .index-info {
+    background-image: url('/img/index-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .info {
+      padding: 35px 0px;
+      margin-bottom: 150px;
+      h2 {
+        span {
+          display: block;
+          text-align: center;
+          font-family: $ff-fancy;
+          font-size: 42px;
+          color: $white;
+          line-height: 1.6;
+          @media (max-width: $xxs-max) {
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
+}

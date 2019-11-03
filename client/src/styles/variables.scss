@@ -1,0 +1,33 @@
+//breakpoints
+$xs-min: 320px;
+$xxs-max: 374px;
+$xs-max: 767px;
+$sm-min: 767px;
+$sm-max: 991px;
+$md-min: 992px;
+$md-max: 1199px;
+$lg-min: 1200px;
+$lg-max: 1500px;
+$xl-min: 1501px;
+
+//colors
+$rust: #cd6647;
+$lite-green: #c4d0cc;
+$dark-green: #718878;
+$pink: #fee5e0;
+$bg-pink: #fff5f4;
+$white: #ffffff;
+$black: #707070;
+
+//fonts
+$ff-fancy: 'La Belle Aurore', cursive;
+$ff-body: 'Julius Sans One', 'Roboto', sans-serif;
+
+//body
+body {
+  background-color: $bg-pink;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 60px;
+}

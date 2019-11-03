@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
+import Slider from './Slider';
 
 export default class Home extends Component {
   render() {
     return (
       <div id='home'>
-        <div className='hero-img'>
-          <img
-            src='./img/hero.jpg'
-            alt='Jessic and Riley by Michelle Breiter'
-          />
-        </div>
+        <Slider />
         <div className='heading container'>
           <h1>
             <span className='h1Top'>Jessica Baron</span>
