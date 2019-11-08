@@ -10,7 +10,7 @@ const Song = require('../../models/Song');
 
 router.get('/', async (req, res) => {
   try {
-    const songs = await Song.find().sort({ date: -1 });
+    const songs = await Song.find().sort({ likes: -1 });
     res.json(songs);
   } catch (err) {
     console.error(err.message);
@@ -26,8 +26,7 @@ router.post('/', async (req, res) => {
   try {
     const newSong = new Song({
       title: req.body.title,
-      artist: req.body.artist,
-      name: req.body.name
+      artist: req.body.artist
     });
 
     const song = await newSong.save();

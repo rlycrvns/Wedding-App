@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from './Slider';
+import Footer from './Footer';
 
 export default class Home extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class Home extends Component {
             </h2>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

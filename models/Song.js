@@ -10,10 +10,6 @@ const SongSchema = new Schema({
     type: String,
     required: true
   },
-  name: {
-    type: String,
-    required: true
-  },
   likes: {
     type: Number,
     default: 0

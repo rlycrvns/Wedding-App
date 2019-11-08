@@ -1,0 +1,100 @@
+@import './variables.scss';
+#suggestASong {
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  .strokes {
+    &:before {
+      content: url(/img/pink-stroke.png);
+      position: absolute;
+      transform: rotate(31deg);
+      right: -175px;
+      bottom: -25px;
+    }
+    &:after {
+      content: url(/img/lite-green-stroke.png);
+      position: absolute;
+      transform: rotate(60deg);
+      left: -197px;
+      top: 160px;
+    }
+  }
+  h1 {
+    font-family: $ff-fancy;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    color: $rust;
+    background-image: url('/img/pink-stroke.png');
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    background-size: contain;
+  }
+  .info-body {
+    .body-text {
+      margin: 40px 0px;
+      font-family: $ff-body;
+      font-size: 16px;
+      text-align: center;
+      color: $dark-green;
+      span {
+        display: block;
+      }
+    }
+    .submit-block {
+      .modalBtn {
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+          0 1px 3px 1px rgba(60, 64, 67, 0.149);
+        display: block;
+        font-family: $ff-body;
+        font-size: 20px;
+        color: $rust;
+        border-color: $dark-green;
+        background-color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+          color: $white;
+          background-color: $dark-green;
+        }
+      }
+    }
+  }
+}
+.modal {
+  .modal-content {
+    background-color: $bg-pink;
+    .modal-header {
+      .modal-title {
+        font-family: $ff-fancy;
+      }
+    }
+    .modal-body {
+      form {
+        .form-group {
+          label {
+            font-family: $ff-body;
+          }
+          .form-control {
+            font-family: $ff-body;
+          }
+        }
+        .modalBtn {
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+            0 1px 3px 1px rgba(60, 64, 67, 0.149);
+          font-family: $ff-body;
+          color: $rust;
+          font-size: 20px;
+          border-color: $dark-green;
+          background-color: $white;
+          &:hover,
+          &:active,
+          &:focus {
+            color: $white;
+            background-color: $dark-green;
+          }
+        }
+      }
+    }
+  }
+}

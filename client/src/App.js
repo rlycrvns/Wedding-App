@@ -12,7 +12,8 @@ import Home from './components/Home';
 import Details from './components/Details';
 import OurStory from './components/OurStory';
 import SuggestASong from './components/SuggestASong';
-import Footer from './components/Footer';
+import { Provider } from 'react-redux';
+import store from './store';
 
 const Main = () => (
   <main className='content'>
@@ -27,11 +28,12 @@ const Main = () => (
 
 function App() {
   return (
-    <div className='App'>
-      <AppNav />
-      <Main />
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div className='App'>
+        <AppNav />
+        <Main />
+      </div>
+    </Provider>
   );
 }
 
