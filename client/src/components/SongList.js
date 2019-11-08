@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { getSongs, likeSong } from '../actions/songActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
+const heart = <FontAwesomeIcon icon={faHeart} />;
 
 class SongList extends Component {
   componentDidMount() {
@@ -17,28 +19,23 @@ class SongList extends Component {
   render() {
     const { songs } = this.props.song;
     return (
-      <Container>
-        <ListGroup>
-          <TransitionGroup className='song-list'>
-            {songs.map(({ _id, title, artist, likes }) => (
-              <CSSTransition key={_id} timeout={500} classNames='fade'>
-                <ListGroupItem>
-                  <span>{title}</span>
-                  <span> By </span>
-                  <span> {artist}</span>
-                  <span> {likes} Likes</span>
-                  <Button
-                    className='like-btn'
-                    color='danger'
-                    size='lg'
-                    onClick={this.onLikeClick.bind(this, _id)}
-                  >
-                    <FontAwesomeIcon icon='heart' />
-                  </Button>
-                </ListGroupItem>
-              </CSSTransition>
-            ))}
-          </TransitionGroup>
+      <Container id='songs'>
+        <ListGroup className='song-list'>
+          {songs.map(({ _id, title, artist, likes }) => (
+            <ListGroupItem>
+              <span className='title'>{title}</span>
+              <span> By </span>
+              <span className='artist'> {artist}</span>
+              <span className='likes'> {likes} Likes</span>
+              <Button
+                className='like-btn'
+                size='md'
+                onClick={this.onLikeClick.bind(this, _id)}
+              >
+                {heart}
+              </Button>
+            </ListGroupItem>
+          ))}
         </ListGroup>
       </Container>
     );
