@@ -10,7 +10,7 @@ import {
   Input
 } from 'reactstrap';
 import { connect } from 'react-redux';
-import { addSong } from '../actions/songActions';
+import { addSong, getSongs } from '../actions/songActions';
 
 class SongModal extends Component {
   state = {
@@ -28,6 +28,8 @@ class SongModal extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  sortList = () => this.props.getSongs();
+
   onSubmit = e => {
     e.preventDefault();
 
@@ -41,6 +43,8 @@ class SongModal extends Component {
 
     // Close modal
     this.toggle();
+
+    setTimeout(() => this.sortList(), 4000);
   };
 
   render() {
@@ -50,7 +54,7 @@ class SongModal extends Component {
           Submit a Song
         </Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Add To Shopping List</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Add To Song List</ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
@@ -73,6 +77,9 @@ class SongModal extends Component {
                   onChange={this.onChange}
                 />
               </FormGroup>
+              <div className='notice'>
+                List will auto sort by likes after 4 seconds
+              </div>
               <Button className='modalBtn mx-auto' outline block>
                 Submit
               </Button>
@@ -90,5 +97,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { addSong }
+  { addSong, getSongs }
 )(SongModal);

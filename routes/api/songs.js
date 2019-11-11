@@ -39,7 +39,7 @@ router.post('/', async (req, res) => {
 });
 
 // @route    PUT api/songs/like/:id
-// @desc     Like a post
+// @desc     Like a Song
 // @access   Public
 router.put('/likes/:id', async (req, res) => {
   try {

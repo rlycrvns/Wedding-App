@@ -32,7 +32,7 @@ export const likeSong = id => dispatch => {
     .then(res =>
       dispatch({
         type: LIKE_SONG,
-        payload: id
+        payload: { id, likes: res.data }
       })
     )
     .catch(err => console.log(err.response.data, err.response.status));

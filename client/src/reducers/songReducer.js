@@ -26,7 +26,11 @@ export default function(state = initialState, action) {
     case LIKE_SONG:
       return {
         ...state,
-        songs: state.songs.filter(song => song._id !== action.payload)
+        songs: state.songs.map(song =>
+          song._id === action.payload.id
+            ? { ...song, likes: action.payload.likes }
+            : song
+        )
       };
     case SONGS_LOADING:
       return {

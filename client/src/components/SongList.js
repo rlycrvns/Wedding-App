@@ -12,8 +12,9 @@ class SongList extends Component {
     this.props.getSongs();
   }
 
-  onLikeClick = id => {
+  onLikeClick = (id, callBack) => {
     this.props.likeSong(id);
+    callBack();
   };
 
   render() {
@@ -23,17 +24,25 @@ class SongList extends Component {
         <ListGroup className='song-list'>
           {songs.map(({ _id, title, artist, likes }) => (
             <ListGroupItem>
-              <span className='title'>{title}</span>
-              <span> By </span>
-              <span className='artist'> {artist}</span>
-              <span className='likes'> {likes} Likes</span>
-              <Button
-                className='like-btn'
-                size='md'
-                onClick={this.onLikeClick.bind(this, _id)}
-              >
-                {heart}
-              </Button>
+              <div className='row1'>
+                <span className='title'>{title}</span>
+                <span className='by'>By</span>
+                <span className='artist'>{artist}</span>
+              </div>
+              <div className='row2'>
+                <span className='likes'> {likes} Likes</span>
+                <Button
+                  className='like-btn'
+                  size='md'
+                  onClick={this.onLikeClick.bind(
+                    this,
+                    _id,
+                    this.props.getSongs
+                  )}
+                >
+                  {heart}
+                </Button>
+              </div>
             </ListGroupItem>
           ))}
         </ListGroup>
