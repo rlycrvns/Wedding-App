@@ -17,7 +17,7 @@ app.get('/', (req, res) => res.send('API Running'));
 //Use Routes
 app.use('/api/songs', songs);
 
-// Serve stati assests if in production
+// Serve static assets if in production
 
 if (process.env.NODE_ENV === 'production') {
   // set static folder
