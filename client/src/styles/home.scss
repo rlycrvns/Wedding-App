@@ -2,10 +2,20 @@
 //Index
 #home {
   .carousel {
+    @media (min-width: $lg-min) {
+      margin: 0 auto;
+      max-width: 1140px;
+    }
     .carousel-inner {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
       .carousel-item {
         img {
           width: 100%;
+        }
+        .carousel-caption {
+          display: none !important;
         }
       }
     }
@@ -19,6 +29,10 @@
       transform: rotate(135deg);
       right: -200px;
       top: -90px;
+      @media (min-width: $md-min) {
+        right: -120px;
+        top: -12px;
+      }
     }
     &:after {
       content: url(/img/lite-green-stroke.png);
@@ -26,6 +40,9 @@
       transform: rotate(135deg);
       left: -236px;
       bottom: 10px;
+      @media (min-width: $md-min) {
+        left: -140px;
+      }
     }
     padding: 40px 0px;
     h1 {

@@ -3,15 +3,13 @@ import { GET_SONGS, ADD_SONG, LIKE_SONG, SONGS_LOADING } from './types';
 
 export const getSongs = () => dispatch => {
   dispatch(setSongsLoading());
-  axios
-    .get('/api/songs')
-    .then(res =>
-      dispatch({
-        type: GET_SONGS,
-        payload: res.data
-      })
-    )
-    .catch(err => console.log(err.response.data, err.response.status));
+  axios.get('/api/songs').then(res =>
+    dispatch({
+      type: GET_SONGS,
+      payload: res.data
+    })
+  );
+  // .catch(err => console.log(err.response.data, err.response.status));
 };
 
 export const addSong = song => dispatch => {

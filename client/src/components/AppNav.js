@@ -21,7 +21,7 @@ const AppNav = props => {
 
   return (
     <header>
-      <Navbar className='fixed-bottom' expand='xl'>
+      <Navbar className='fixed-bottom'>
         <Collapse isOpen={!collapsed} navbar>
           <NavbarBrand href='#home'>
             <img

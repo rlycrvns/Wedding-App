@@ -18,11 +18,14 @@ header {
           width: 120px;
         }
         @media (min-width: $lg-min) {
-          display: none;
+          width: 200px;
         }
         img {
           @media (max-width: $md-max) {
             width: 120px;
+          }
+          @media (min-width: $lg-min) {
+            width: 200px;
           }
         }
       }
@@ -57,23 +60,19 @@ header {
         }
         margin-bottom: 20px;
         .nav-item {
-          @media (max-width: $md-max) {
-            background: url('/img/lite-green-stroke.png') no-repeat;
-            background-size: auto;
-            background-position: center 50%;
-            padding-bottom: 15px;
-            text-align: center;
-          }
+          background: url('/img/lite-green-stroke.png') no-repeat;
+          background-size: auto;
+          background-position: center 50%;
+          padding-bottom: 15px;
+          text-align: center;
           @media (max-width: $xxs-max) {
             font-size: 22px;
             padding-bottom: 10px;
           }
           a {
-            @media (max-width: $md-max) {
-              font-size: 30px;
-              color: $rust;
-              font-family: $ff-body;
-            }
+            font-size: 30px;
+            color: $rust;
+            font-family: $ff-body;
             @media (max-width: 374px) {
               font-size: 22px;
             }

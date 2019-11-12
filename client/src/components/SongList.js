@@ -26,7 +26,6 @@ class SongList extends Component {
             <ListGroupItem>
               <div className='row1'>
                 <span className='title'>{title}</span>
-                <span className='by'>By</span>
                 <span className='artist'>{artist}</span>
               </div>
               <div className='row2'>

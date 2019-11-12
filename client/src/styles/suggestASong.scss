@@ -1,22 +1,41 @@
 @import './variables.scss';
 #suggestASong {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   position: relative;
   overflow: hidden;
+  &:before {
+    content: url(/img/rust-stroke.png);
+    position: absolute;
+    transform: rotate(174deg);
+    left: -138px;
+    bottom: 0px;
+    opacity: 0.7;
+    z-index: -1;
+  }
+  &:after {
+    content: url(/img/lite-green-stroke.png);
+    position: absolute;
+    transform: rotate(120deg);
+    left: -175px;
+    bottom: 38px;
+    z-index: -1;
+  }
   .strokes {
     &:before {
-      content: url(/img/pink-stroke.png);
+      content: url(/img/lite-green-stroke.png);
       position: absolute;
       transform: rotate(31deg);
       right: -175px;
       bottom: -25px;
+      z-index: -1;
     }
     &:after {
-      content: url(/img/lite-green-stroke.png);
+      content: url(/img/pink-stroke.png);
       position: absolute;
       transform: rotate(60deg);
       left: -197px;
       top: 160px;
+      z-index: -1;
     }
   }
   h1 {
@@ -63,7 +82,10 @@
     }
   }
   #songs {
-    margin: 20px 0px;
+    @media (min-width: $lg-min) {
+      max-width: 900px;
+    }
+    margin: 20px auto;
     .song-list {
       .list-group-item {
         padding: 8px;
@@ -74,18 +96,13 @@
         background-color: $white;
         .row1 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-evenly;
           align-items: center;
           width: 100%;
           .title,
           .artist {
             font-size: 16px;
-            text-align: center;
-          }
-          .by {
-            color: $dark-green;
-            padding: 0px 8px;
-            font-size: 12px;
+            text-align: left;
           }
         }
         .row2 {
