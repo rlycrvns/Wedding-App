@@ -15,7 +15,7 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('API Running'));
 
 //Use Routes
-app.use('/api/songs', require('./routes/api/users'));
+app.use('/api/songs', songs);
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
