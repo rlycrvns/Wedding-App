@@ -15,12 +15,11 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('API Running'));
 
 //Use Routes
-app.use('/api/songs', songs);
+app.use('/api/songs', require('./routes/api/users'));
 
-// Serve static assets if in production
-
+// Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
-  // set static folder
+  // Set static folder
   app.use(express.static('client/build'));
 
   app.get('*', (req, res) => {
