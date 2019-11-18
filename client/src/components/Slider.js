@@ -9,22 +9,22 @@ import {
 
 const items = [
   {
-    src: './img/slides/slide1.jpg',
+    src: '/img/slides/slide1.jpg',
     altText: 'Jessica and Riley by Michelle Breiter',
     caption: 'Slide 1'
   },
   {
-    src: './img/slides/slide2.jpg',
+    src: '/img/slides/slide2.jpg',
     altText: 'Jessica and Riley by Michelle Breiter',
     caption: 'Slide 2'
   },
   {
-    src: './img/slides/slide3.jpg',
+    src: '/img/slides/slide3.jpg',
     altText: 'Jessica and Riley by Michelle Breiter',
     caption: 'Slide 3'
   },
   {
-    src: './img/slides/slide4.jpg',
+    src: '/img/slides/slide4.jpg',
     altText: 'Jessica and Riley by Michelle Breiter',
     caption: 'Slide 4'
   }

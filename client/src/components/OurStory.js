@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slider from './Slider';
 
 export default class OurStory extends Component {
   render() {
@@ -6,40 +7,38 @@ export default class OurStory extends Component {
       <div id='ourstory'>
         <div className='container'>
           <h1>Our Story</h1>
+          <Slider />
           <div className='timeline'>
             <div className='left-col'>
+              <div className='col-name'>Jessica</div>
               <div className='event'>
+                <div className='event-date'>May, 2014</div>
                 <div className='event-info'>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-                  tenetur inventore debitis delectus, maiores est eaque
-                  perspiciatis obcaecati placeat? Iusto quas iste earum quis
-                  cumque est explicabo iure quidem impedit.
+                  She moved back to portland after a year living in Knoxville,
+                  Tennessee
                 </div>
               </div>
               <div className='event'>
+                <div className='event-date'>May, 2014</div>
                 <div className='event-info'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  ab et deserunt sed sint esse quasi a nisi vitae voluptatibus
-                  reiciendis corrupti, aliquid sequi vel sunt optio. Totam, quae
-                  laudantium?
+                  She moved back to portland after a year living in Knoxville,
+                  Tennessee
                 </div>
               </div>
             </div>
             <div className='right-col'>
+              <div className='col-name'>Riley</div>
               <div className='event'>
+                <div className='event-date'>July, 2013</div>
                 <div className='event-info'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima ab suscipit earum ipsa totam aperiam ex ullam minus
-                  sint autem exercitationem quod alias nam ratione consequatur
-                  voluptas, architecto commodi nemo.
+                  He packed his old Subaru to the brim and headed west to
+                  Portland.
                 </div>
               </div>
               <div className='event'>
+                <div className='event-date'>March, 2015</div>
                 <div className='event-info'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  possimus cum debitis incidunt autem temporibus blanditiis
-                  natus vero eligendi. Aperiam pariatur fuga quia, ullam tempora
-                  quos recusandae nesciunt qui consequuntur?
+                  He went back to school for Web Development.
                 </div>
               </div>
             </div>
