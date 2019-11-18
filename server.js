@@ -18,13 +18,21 @@ app.get('/', (req, res) => res.send('API Running'));
 app.use('/api/songs', songs);
 
 // Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  // set static folder
-  app.use('/', express.static(path.join(__dirname, '/client/build')));
+// if (process.env.NODE_ENV === 'production') {
+//   // set static folder
+//   app.use('/', express.static(path.join(__dirname, '/client/build')));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+//   });
+// }
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build')); // serve the static react app
+  app.get(/^\/(?!api).*/, (req, res) => {
+    // don't serve api routes to react app
+    res.sendFile(path.join(__dirname, './client/build/index.html'));
   });
+  console.log('Serving React App...');
 }
 
 const PORT = process.env.PORT || 5000;
