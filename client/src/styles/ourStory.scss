@@ -38,70 +38,73 @@
       z-index: -1;
     }
   }
-  h1 {
-    font-family: $ff-fancy;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 50px;
-    color: $rust;
-    background-image: url('/img/pink-stroke.png');
-    background-repeat: no-repeat;
-    background-position: center 60%;
-    background-size: contain;
-  }
-  .carousel {
-    @media (min-width: $lg-min) {
-      margin: 0 auto;
-      max-width: 1140px;
-    }
-    .carousel-inner {
-      width: 100%;
-      margin: 0 auto;
-      display: block;
-      .carousel-item {
-        img {
-          width: 100%;
-        }
-        .carousel-caption {
-          display: none !important;
-        }
-      }
-    }
-  }
-  .timeline {
-    background-image: url('/img/timeline-stroke.png');
-    height: 200vh;
-    background-repeat: no-repeat;
-    background-position: center top;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  .left-col {
-    width: 45%;
-  }
-  .right-col {
-    width: 45%;
-  }
-  .left-col,
-  .right-col {
-    .col-name {
+  .container {
+    max-width: 800px;
+    h1 {
       font-family: $ff-fancy;
-      font-size: 30px;
+      font-size: 50px;
       text-align: center;
+      margin-top: 50px;
       color: $rust;
+      background-image: url('/img/pink-stroke.png');
+      background-repeat: no-repeat;
+      background-position: center 60%;
+      background-size: contain;
     }
-    .event {
-      padding: 40px 0px;
-      .event-date {
-        font-family: $ff-fancy;
-        font-size: 20px;
-        color: $dark-green;
+    .carousel {
+      @media (min-width: $lg-min) {
+        margin: 0 auto;
+        max-width: 1140px;
       }
-      .event-info {
-        font-size: 16px;
-        padding-top: 5px;
-        font-family: $ff-body;
+      .carousel-inner {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        .carousel-item {
+          img {
+            width: 100%;
+          }
+          .carousel-caption {
+            display: none !important;
+          }
+        }
+      }
+    }
+    .timeline {
+      background-image: url('/img/timeline-stroke.png');
+      height: 200vh;
+      background-repeat: no-repeat;
+      background-position: center top;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .left-col {
+      width: 45%;
+    }
+    .right-col {
+      width: 45%;
+    }
+    .left-col,
+    .right-col {
+      .col-name {
+        font-family: $ff-fancy;
+        font-size: 30px;
+        text-align: center;
+        color: $rust;
+      }
+      .event {
+        padding: 40px 0px;
+        .event-date {
+          font-family: $ff-fancy;
+          font-size: 20px;
+          color: $dark-green;
+        }
+        .event-info {
+          font-size: 16px;
+          padding-top: 5px;
+          font-family: $ff-body;
+        }
       }
     }
   }

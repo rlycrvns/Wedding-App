@@ -29,52 +29,72 @@
       bottom: 260px;
     }
     &:after {
-      content: url(/img/lite-green-stroke.png);
+      content: url(/img/rust-stroke.png);
       position: absolute;
       transform: rotate(60deg);
       left: -197px;
       top: 160px;
+      opacity: 0.7;
     }
   }
-  h1 {
-    font-family: $ff-fancy;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 50px;
-    color: $rust;
-    background-image: url('/img/pink-stroke.png');
-    background-repeat: no-repeat;
-    background-position: center 60%;
-    background-size: contain;
-  }
-  .info-body {
-    position: relative;
-    overflow: hidden;
-    font-family: $ff-body;
-    text-align: center;
-    margin-bottom: 200px;
-    h2 {
+  .container {
+    max-width: 800px;
+    h1 {
+      font-family: $ff-fancy;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 50px;
       color: $rust;
-      font-size: 26px;
-      padding-top: 20px;
+      background-image: url('/img/pink-stroke.png');
+      background-repeat: no-repeat;
+      background-position: center 60%;
+      background-size: contain;
     }
-    h3 {
-      color: $dark-green;
-      font-size: 22px;
-      a {
-        color: $dark-green;
-        font-size: 22px;
-      }
-      span {
-        display: block;
-        font-size: 20px;
-        line-height: 1.4;
-      }
-      .faq-title {
-        color: $black;
-      }
-      .faq-body {
-        font-size: 20px;
+    .info-body {
+      position: relative;
+      overflow: hidden;
+      font-family: $ff-body;
+      text-align: center;
+      margin-bottom: 200px;
+      .info-block {
+        position: relative;
+        padding-top: 20px;
+        h2 {
+          color: $rust;
+          font-size: 26px;
+          padding-top: 20px;
+          padding-bottom: 5px;
+        }
+        h3 {
+          color: $dark-green;
+          font-size: 22px;
+          a {
+            color: $dark-green;
+            font-size: 22px;
+          }
+          span {
+            display: block;
+            font-size: 20px;
+            line-height: 1.8;
+          }
+          .faq-title {
+            color: $black;
+          }
+          .faq-body {
+            font-size: 20px;
+          }
+        }
+        &:after {
+          content: url(/img/lite-green-stroke.png);
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          top: 39px;
+          z-index: -1;
+          opacity: 0.6;
+        }
       }
     }
   }

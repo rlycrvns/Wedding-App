@@ -23,6 +23,7 @@
   .heading {
     position: relative;
     overflow: hidden;
+    max-width: 800px;
     &:before {
       content: url(/img/lite-green-stroke.png);
       position: absolute;
@@ -78,8 +79,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    max-width: 800px;
     .info {
-      padding: 35px 0px;
+      padding: 90px 0px;
       margin-bottom: 20px;
       h2 {
         span {
@@ -91,6 +93,9 @@
           line-height: 1.6;
           @media (max-width: $xxs-max) {
             font-size: 38px;
+          }
+          @media (min-width: $sm-min) {
+            font-size: 56px;
           }
         }
       }
