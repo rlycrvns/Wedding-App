@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Slider from './Slider';
 import Footer from './Footer';
+import Views from './Views';
 
 export default class Home extends Component {
   render() {
     return (
       <div id='home'>
         <Slider />
+        <Views />
         <div className='heading container'>
           <h1>
             <span className='h1Top'>Jessica Baron</span>

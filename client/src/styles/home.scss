@@ -6,6 +6,9 @@
       margin: 0 auto;
       max-width: 800px;
     }
+    @media (max-width: $md-max) {
+      display: none;
+    }
     .carousel-inner {
       width: 100%;
       margin: 0 auto;
@@ -18,6 +21,16 @@
           display: none !important;
         }
       }
+    }
+  }
+  .carousel-mobile {
+    @media (min-width: $lg-min) {
+      display: none;
+    }
+    margin: 0 auto;
+    max-width: 800px;
+    .slider-img {
+      width: 100%;
     }
   }
   .heading {

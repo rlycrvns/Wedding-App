@@ -54,7 +54,10 @@
     .carousel {
       @media (min-width: $lg-min) {
         margin: 0 auto;
-        max-width: 1140px;
+        max-width: 800px;
+      }
+      @media (max-width: $md-max) {
+        display: none;
       }
       .carousel-inner {
         width: 100%;
@@ -68,6 +71,16 @@
             display: none !important;
           }
         }
+      }
+    }
+    .carousel-mobile {
+      @media (min-width: $lg-min) {
+        display: none;
+      }
+      margin: 0 auto;
+      max-width: 800px;
+      .slider-img {
+        width: 100%;
       }
     }
     .timeline {

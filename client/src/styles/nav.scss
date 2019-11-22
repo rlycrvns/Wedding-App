@@ -7,29 +7,6 @@ header {
     background-color: transparent;
     .navbar-collapse {
       overflow: hidden;
-      .navbar-brand {
-        position: relative;
-        @media (min-width: 321px) {
-          bottom: -5%;
-        }
-        display: block;
-        margin: 0 auto;
-        @media (max-width: $md-max) {
-          width: 120px;
-        }
-        @media (min-width: $lg-min) {
-          width: 200px;
-        }
-        img {
-          @media (max-width: $md-max) {
-            width: 120px;
-          }
-          @media (min-width: $lg-min) {
-            width: 200px;
-          }
-        }
-      }
-      overflow: hidden;
       transition: height 0.3s ease-in-out;
       position: fixed;
       bottom: 0;
@@ -55,9 +32,7 @@ header {
           z-index: -2;
         }
         position: relative;
-        @media (min-width: 321px) {
-          top: 10%;
-        }
+        top: 10%;
         margin-bottom: 20px;
         .nav-item {
           background: url('/img/lite-green-stroke.png') no-repeat;

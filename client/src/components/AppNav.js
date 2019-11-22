@@ -23,14 +23,6 @@ const AppNav = props => {
     <header>
       <Navbar className='fixed-bottom'>
         <Collapse isOpen={!collapsed} navbar>
-          {/* <NavbarBrand href='#home'>
-            <img
-              src='
-              /img/initials.png'
-              alt='JB + RC'
-              className='initials'
-            />
-          </NavbarBrand> */}
           <Nav navbar>
             <NavItem>
               <NavLink onClick={toggleNavbar} tag={RRNavLink} exact to='/'>
