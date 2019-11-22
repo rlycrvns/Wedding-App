@@ -42,7 +42,7 @@ header {
           position: absolute;
           transform: rotate(35deg);
           right: 31px;
-          top: -167px;
+          top: -35px;
           z-index: -1;
           opacity: 0.6;
         }
@@ -51,12 +51,12 @@ header {
           position: absolute;
           transform: rotate(-45deg);
           left: 80px;
-          top: -108px;
+          top: -100px;
           z-index: -2;
         }
         position: relative;
         @media (min-width: 321px) {
-          bottom: -8%;
+          top: 10%;
         }
         margin-bottom: 20px;
         .nav-item {

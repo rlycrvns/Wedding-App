@@ -22,6 +22,14 @@ export default class Home extends Component {
             </h2>
           </div>
         </div>
+        <div className='logo mx-auto'>
+          <img
+            src='
+              /img/initials.png'
+            alt='JB + RC'
+            className='initials'
+          />
+        </div>
         <Footer />
       </div>
     );
