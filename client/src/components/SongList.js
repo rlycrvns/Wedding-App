@@ -25,8 +25,9 @@ class SongList extends Component {
           {songs.map(({ _id, title, artist, likes }) => (
             <ListGroupItem>
               <div className='row1'>
-                <span className='title'>{title}</span>
-                <span className='artist'>{artist}</span>
+                <span className='song'>
+                  {title} <span>by</span> {artist}
+                </span>
               </div>
               <div className='row2'>
                 <span className='likes'> {likes} Likes</span>
@@ -54,7 +55,4 @@ const mapStateToProps = state => ({
   song: state.song
 });
 
-export default connect(
-  mapStateToProps,
-  { getSongs, likeSong }
-)(SongList);
+export default connect(mapStateToProps, { getSongs, likeSong })(SongList);

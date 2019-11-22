@@ -78,7 +78,7 @@ class SongModal extends Component {
                 />
               </FormGroup>
               <div className='notice'>
-                List will auto sort by likes after 4 seconds
+                List will auto sort by likes 4 seconds after submission
               </div>
               <Button className='modalBtn mx-auto' outline block>
                 Submit
@@ -95,7 +95,4 @@ const mapStateToProps = state => ({
   song: state.song
 });
 
-export default connect(
-  mapStateToProps,
-  { addSong, getSongs }
-)(SongModal);
+export default connect(mapStateToProps, { addSong, getSongs })(SongModal);

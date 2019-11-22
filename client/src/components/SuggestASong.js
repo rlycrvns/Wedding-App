@@ -11,7 +11,7 @@ export default class SuggestASong extends Component {
           <h1>Suggest A Song</h1>
           <div className='info-body'>
             <div className='body-text'>
-              Help us build the perfect reception playlist!
+              Help us build the perfect playlist!
               <span>
                 Submit your dance party song ideas below and vote for the ones
                 you like!
