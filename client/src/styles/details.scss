@@ -24,16 +24,17 @@
     &:before {
       content: url(/img/lite-green-stroke.png);
       position: absolute;
-      transform: rotate(45deg);
-      right: -175px;
-      bottom: 260px;
+      transform: rotate(189deg);
+      left: -175px;
+      bottom: 126px;
+      opacity: 0.5;
     }
     &:after {
       content: url(/img/rust-stroke.png);
       position: absolute;
       transform: rotate(60deg);
       left: -197px;
-      top: 160px;
+      bottom: 120px;
       opacity: 0.7;
     }
   }
@@ -75,7 +76,7 @@
           span {
             display: block;
             font-size: 20px;
-            line-height: 1.8;
+            line-height: 2;
           }
           .faq-title {
             color: $black;

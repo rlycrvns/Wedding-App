@@ -41,13 +41,13 @@ export default class Details extends Component {
                 <span>Beer and Wine Bar</span>
               </h3>
             </div>
-            <div className='info-block'>
+            {/* <div className='info-block'>
               <h2>Registry</h2>
               <h3>
                 <span>Light Meal</span>
                 <span>Beer and Wine Bar</span>
               </h3>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

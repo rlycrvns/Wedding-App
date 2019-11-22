@@ -71,41 +71,7 @@
       }
     }
     .timeline {
-      background-image: url('/img/timeline-stroke.png');
-      height: 200vh;
-      background-repeat: no-repeat;
-      background-position: center top;
-      display: flex;
-      justify-content: space-between;
       margin-top: 20px;
-    }
-    .left-col {
-      width: 45%;
-    }
-    .right-col {
-      width: 45%;
-    }
-    .left-col,
-    .right-col {
-      .col-name {
-        font-family: $ff-fancy;
-        font-size: 30px;
-        text-align: center;
-        color: $rust;
-      }
-      .event {
-        padding: 40px 0px;
-        .event-date {
-          font-family: $ff-fancy;
-          font-size: 20px;
-          color: $dark-green;
-        }
-        .event-info {
-          font-size: 16px;
-          padding-top: 5px;
-          font-family: $ff-body;
-        }
-      }
     }
   }
 }

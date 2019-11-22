@@ -6,6 +6,7 @@ export default class Footer extends Component {
       <footer>
         <span>
           Built by Riley Cravens Copyright &copy; {new Date().getFullYear()}
+          <span>All Rights Reserved</span>
         </span>
         <span>
           Photography by
