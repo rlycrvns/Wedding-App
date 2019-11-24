@@ -1,10 +1,12 @@
 @import './variables.scss';
 //Index
 #home {
+  overflow: hidden;
   .carousel {
+    z-index: 2;
     @media (min-width: $lg-min) {
       margin: 0 auto;
-      max-width: 800px;
+      max-width: 1200px;
     }
     @media (max-width: $md-max) {
       display: none;
@@ -35,8 +37,7 @@
   }
   .heading {
     position: relative;
-    overflow: hidden;
-    max-width: 800px;
+    width: 100%;
     &:before {
       content: url(/img/lite-green-stroke.png);
       position: absolute;
