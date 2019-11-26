@@ -12,6 +12,7 @@ import Home from './components/Home';
 import Details from './components/Details';
 import OurStory from './components/OurStory';
 import SuggestASong from './components/SuggestASong';
+import RSVP from './components/RSVP';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -22,6 +23,7 @@ const Main = () => (
       <Route exact path='/components/details' component={Details} />
       <Route exact path='/components/ourstory' component={OurStory} />
       <Route exact path='/components/suggestasong' component={SuggestASong} />
+      <Route exact path='/components/rsvp' component={RSVP} />
     </Switch>
   </main>
 );

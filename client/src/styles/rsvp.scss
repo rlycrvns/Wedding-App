@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+//rsvp
+#rsvp {
+  position: relative;
+  overflow: hidden;
+  .container {
+    max-width: 800px;
+    h1 {
+      font-family: $ff-fancy;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 50px;
+      color: $rust;
+      background-image: url('/img/pink-stroke.png');
+      background-repeat: no-repeat;
+      background-position: center 60%;
+      background-size: contain;
+    }
+  }
+}

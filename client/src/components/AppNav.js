@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink as RRNavLink } from 'react-router-dom';
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from 'reactstrap';
+import { Collapse, Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 import { HamburgerSpin } from 'react-animated-burgers';
 
 const AppNav = props => {
@@ -57,7 +50,11 @@ const AppNav = props => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={toggleNavbar} tag={RRNavLink} to='/'>
+              <NavLink
+                onClick={toggleNavbar}
+                tag={RRNavLink}
+                to='/components/rsvp'
+              >
                 RSVP
               </NavLink>
             </NavItem>
