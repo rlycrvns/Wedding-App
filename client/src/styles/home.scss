@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 //Index
 #home {
   overflow: hidden;
@@ -15,6 +15,7 @@
       width: 100%;
       margin: 0 auto;
       display: block;
+      border-radius: 50%;
       .carousel-item {
         img {
           width: 100%;
@@ -65,14 +66,14 @@
     h1 {
       .h1Top,
       .h1Bottom {
-        background-image: url('/img/pink-stroke.png');
+        background-image: url("/img/pink-stroke.png");
         background-repeat: no-repeat;
         background-position: center 130%;
         background-size: contain;
         line-height: 1.4;
       }
       .h1Bottom {
-        background-image: url('/img/pink-stroke-inverted.png');
+        background-image: url("/img/pink-stroke-inverted.png");
       }
       .plus-span {
         padding-top: 10px;
@@ -91,7 +92,7 @@
     }
   }
   .index-info {
-    background-image: url('/img/index-bg.png');
+    background-image: url("/img/index-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
