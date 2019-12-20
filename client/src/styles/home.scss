@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import './variables.scss';
 //Index
 #home {
   overflow: hidden;
@@ -66,14 +66,14 @@
     h1 {
       .h1Top,
       .h1Bottom {
-        background-image: url("/img/pink-stroke.png");
+        background-image: url('/img/pink-stroke.png');
         background-repeat: no-repeat;
         background-position: center 130%;
         background-size: contain;
         line-height: 1.4;
       }
       .h1Bottom {
-        background-image: url("/img/pink-stroke-inverted.png");
+        background-image: url('/img/pink-stroke-inverted.png');
       }
       .plus-span {
         padding-top: 10px;
@@ -92,11 +92,14 @@
     }
   }
   .index-info {
-    background-image: url("/img/index-bg.png");
+    background-image: url('/img/index-bg-new.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    max-width: 800px;
+    background-size: auto;
+    @media (min-width: $md-min) {
+      background-size: contain;
+    }
+    width: 100%;
     .info {
       padding: 90px 0px;
       margin-bottom: 20px;
@@ -109,10 +112,10 @@
           color: $white;
           line-height: 1.6;
           @media (max-width: $xxs-max) {
-            font-size: 38px;
+            font-size: 44px;
           }
           @media (min-width: $sm-min) {
-            font-size: 56px;
+            font-size: 64px;
           }
         }
       }

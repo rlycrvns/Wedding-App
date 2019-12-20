@@ -32,7 +32,7 @@ export default class Home extends Component {
               <span className='h1Bottom'>Riley Cravens</span>
             </h1>
           </div>
-          <div className='index-info container'>
+          <div className='index-info'>
             <div className='info'>
               <h2>
                 <span>September 6, 2020</span>
