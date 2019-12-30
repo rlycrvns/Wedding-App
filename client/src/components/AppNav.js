@@ -31,7 +31,7 @@ const AppNav = props => {
                 Details
               </NavLink>
             </NavItem>
-            {/* <NavItem>
+            <NavItem>
               <NavLink
                 onClick={toggleNavbar}
                 tag={RRNavLink}
@@ -39,7 +39,7 @@ const AppNav = props => {
               >
                 Our Story
               </NavLink>
-            </NavItem> */}
+            </NavItem>
             <NavItem>
               <NavLink
                 onClick={toggleNavbar}

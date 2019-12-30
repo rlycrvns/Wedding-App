@@ -45,11 +45,19 @@ header {
             padding-bottom: 10px;
           }
           a {
+            display: inline-block;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
             font-size: 30px;
             color: $rust;
             font-family: $ff-body;
             @media (max-width: 374px) {
               font-size: 22px;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+              transform: translateY(-10px);
+              color: $black;
             }
           }
         }
@@ -70,6 +78,8 @@ header {
       background-color: $bg-pink;
       box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
         0 1px 3px 1px rgba(60, 64, 67, 0.149);
+      transition: background-color 0.3s ease-in-out,
+        border-color 0.3s ease-in-out;
       > div {
         height: unset;
         width: unset;
@@ -84,6 +94,12 @@ header {
             height: 2px;
           }
         }
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $white;
+        border-color: $rust;
       }
     }
   }
