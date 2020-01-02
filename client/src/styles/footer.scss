@@ -19,6 +19,7 @@ footer {
       &:active,
       &:focus {
         color: $rust;
+        text-decoration: none;
       }
     }
   }

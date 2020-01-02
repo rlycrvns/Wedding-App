@@ -7,7 +7,7 @@ export default class RSVP extends Component {
     loading: true
   };
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 1500);
+    setTimeout(() => this.setState({ loading: false }), 1000);
   }
   render() {
     const { loading } = this.state;
