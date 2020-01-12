@@ -30,7 +30,7 @@ export default class Details extends Component {
                   <span>September 6, 2020</span>
                   <span>Arrival at 5:00 PM</span>
                   <span>Outdoor Ceremony at 5:30 PM</span>
-                  <span> On Premesis Reception to Follow</span>
+                  <span> On-site Reception to Follow</span>
                 </h3>
               </div>
               <div className='info-block'>
