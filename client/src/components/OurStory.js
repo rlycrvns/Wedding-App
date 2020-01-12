@@ -134,12 +134,12 @@ export default class OurStory extends Component {
                       Star Wars duh”.
                     </p>
                   </div>
-                  <div className='story-date'>
+                  {/* <div className='story-date'>
                     May 21, 2019 9:49 am Zion National Park, Utah
                   </div>
                   <div className='story-text'>
                     <p>She said yes.</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
