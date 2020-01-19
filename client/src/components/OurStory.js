@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Slider from './Slider';
-import Views from './Views';
 import LoadingScreen from 'react-loading-screen';
 
 export default class OurStory extends Component {
@@ -143,8 +141,248 @@ export default class OurStory extends Component {
                 </div>
               </div>
             </div>
-            <Slider />
-            <Views />
+            <div className='date-time'>
+              March 17th, 2017 - Our journey began with our first date and the
+              rest is history...
+            </div>
+            <div className='photos'>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/1.jpg'
+                  alt='The first night we said I Love You'
+                />
+                <div className='caption'>
+                  The first night we said I Love You
+                </div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/2.jpg'
+                  alt='Photobooth Experts'
+                />
+                <div className='caption'>Photobooth Experts</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/3.jpg'
+                  alt='Moving in together<'
+                />
+                <div className='caption'>Moving in together</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/4.jpg'
+                  alt='Our first Starlight Parade Troop together'
+                />
+                <div className='caption'>
+                  First Starlight Parade Troop together
+                </div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/5.jpg'
+                  alt='A surpise trip to Newport'
+                />
+                <div className='caption'>A surpise trip to Newport</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/6.jpg'
+                  alt='First trip to Ocean Shores'
+                />
+                <div className='caption'>First trip to Ocean Shores</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/7.jpg'
+                  alt='Our first Oregon Country Fair'
+                />
+                <div className='caption'>Our first Oregon Country Fair</div>
+              </div>
+              <div className='photo'>
+                <img loading='lazy' src='/img/photos/8.jpg' alt='OCF Babes' />
+                <div className='caption'>OCF Babes</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/9.jpg'
+                  alt='Our First Roadtrip, Painted Hills, OR'
+                />
+                <div className='caption'>
+                  Our First Roadtrip, Painted Hills, OR
+                </div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/10.jpg'
+                  alt='First Wedding, Katie and John Lowry'
+                />
+                <div className='caption'>
+                  First Wedding, Katie and John Lowry
+                </div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/11.jpg'
+                  alt='Dance Party'
+                />
+                <div className='caption'>Dance Party</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/12.jpg'
+                  alt="12'000 Feet Up"
+                />
+                <div className='caption'>12&apos;000 Feet Up</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/13.jpg'
+                  alt='Engagement Spot 2 years before'
+                />
+                <div className='caption'>Engagement Spot - 2 years before</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/14.jpg'
+                  alt='Zion National Park'
+                />
+                <div className='caption'>Zion National Park</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/15.jpg'
+                  alt='Our first Rose City Comic-Con'
+                />
+                <div className='caption'>Our first Rose City Comic-Con</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/16.jpg'
+                  alt='Suprise cooking class'
+                />
+                <div className='caption'>Suprise cooking class</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/17.jpg'
+                  alt='We are good hikers'
+                />
+                <div className='caption'>We are good hikers</div>
+              </div>
+              <div className='photo'>
+                <img loading='lazy' src='/img/photos/18.jpg' alt='Date night' />
+                <div className='caption'>Date night</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/19.jpg'
+                  alt='Dinner Date'
+                />
+                <div className='caption'>Dinner Date</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/20.jpg'
+                  alt='First trip to Bend, OR'
+                />
+                <div className='caption'>First trip to Bend, OR</div>
+              </div>
+              <div className='photo'>
+                <img loading='lazy' src='/img/photos/21.jpg' alt='Snow babes' />
+                <div className='caption'>Snow babes</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/22.jpg'
+                  alt='First Christmas Card'
+                />
+                <div className='caption'>First Christmas Card</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/23.jpg'
+                  alt='First New Years Eve'
+                />
+                <div className='caption'>First New Years Eve</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/24.jpg'
+                  alt='At the beach cabin'
+                />
+                <div className='caption'>At the beach cabin</div>
+              </div>
+              <div className='photo'>
+                <img loading='lazy' src='/img/photos/25.jpg' alt='Beach Meow' />
+                <div className='caption'>Beach Meow</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/26.jpg'
+                  alt='1 year anniversary'
+                />
+                <div className='caption'>1 year anniversary</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/27.jpg'
+                  alt='We like the coast okay'
+                />
+                <div className='caption'>We like the coast okay</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/28.jpg'
+                  alt="Bryan and Cheryl's Wedding"
+                />
+                <div className='caption'>Bryan and Cheryl&apos;s Wedding</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/29.jpg'
+                  alt='Second Starlight Troop'
+                />
+                <div className='caption'>Second Starlight Troop</div>
+              </div>
+              <div className='photo'>
+                <img loading='lazy' src='/img/photos/30.jpg' alt='Nerds' />
+                <div className='caption'>Nerds</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/31.jpg'
+                  alt="Riley's Graduation"
+                />
+                <div className='caption'>Riley&apos;s Graduation</div>
+              </div>
+            </div>
           </div>
         </div>
       </LoadingScreen>

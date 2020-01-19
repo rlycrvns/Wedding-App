@@ -82,9 +82,54 @@
             p {
               font-size: 16px;
               margin-top: 15px;
-              font-family: Roboto, sans-serif;
+              font-family: Montserrat, sans-serif;
             }
           }
+        }
+      }
+    }
+    .date-time {
+      font-weight: 700;
+      font-size: 18px;
+      font-family: Roboto, sans-serif;
+      color: $rust;
+      text-align: center;
+      margin: 50px 0px;
+    }
+    .photos {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: space-around;
+      align-items: flex-start;
+      height: 5500px;
+      @media (max-width: $xs-max) {
+        align-content: center;
+        height: unset;
+      }
+      .photo {
+        width: 32%;
+        margin-bottom: 2%;
+        @media (max-width: $sm-max) {
+          width: 38%;
+        }
+        @media (max-width: $xs-max) {
+          width: 80%;
+        }
+
+        img {
+          border-radius: 5px;
+          width: 100%;
+        }
+        .caption {
+          width: 100%;
+          border-radius: 5px;
+          text-align: center;
+          background-color: $pink;
+          color: $rust;
+          font-weight: 700;
+          font-size: 14px;
+          margin-top: 8px;
+          font-family: $ff-body, sans-serif;
         }
       }
     }
