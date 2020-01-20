@@ -9,24 +9,56 @@ import {
 
 const items = [
   {
+    src: '/img/slides/slide10.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
     src: '/img/slides/slide1.jpg',
-    altText: 'Jessica and Riley by Michelle Breiter',
-    caption: 'Slide 1'
+    altText: 'Jessica and Riley by Michelle Breiter'
   },
   {
     src: '/img/slides/slide2.jpg',
-    altText: 'Jessica and Riley by Michelle Breiter',
-    caption: 'Slide 2'
+    altText: 'Jessica and Riley by Michelle Breiter'
   },
   {
     src: '/img/slides/slide3.jpg',
-    altText: 'Jessica and Riley by Michelle Breiter',
-    caption: 'Slide 3'
+    altText: 'Jessica and Riley by Michelle Breiter'
   },
   {
     src: '/img/slides/slide4.jpg',
-    altText: 'Jessica and Riley by Michelle Breiter',
-    caption: 'Slide 4'
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide5.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide6.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide7.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide8.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide9.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide10.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide11.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
+  },
+  {
+    src: '/img/slides/slide12.jpg',
+    altText: 'Jessica and Riley by Michelle Breiter'
   }
 ];
 
@@ -69,11 +101,6 @@ const Slider = props => {
 
   return (
     <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-      <CarouselIndicators
-        items={items}
-        activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
       {slides}
       <CarouselControl
         direction='prev'

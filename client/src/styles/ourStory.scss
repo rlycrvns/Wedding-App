@@ -75,11 +75,12 @@
           .story-date {
             font-weight: 700;
             font-size: 18px;
-            font-family: Roboto, sans-serif;
+            font-family: $ff-body, sans-serif;
             color: $rust;
           }
           .story-text {
             p {
+              color: $black;
               font-size: 16px;
               margin-top: 15px;
               font-family: Montserrat, sans-serif;
@@ -91,7 +92,7 @@
     .date-time {
       font-weight: 700;
       font-size: 18px;
-      font-family: Roboto, sans-serif;
+      font-family: $ff-body, sans-serif;
       color: $rust;
       text-align: center;
       margin: 50px 0px;
@@ -101,7 +102,13 @@
       flex-flow: column wrap;
       align-content: space-around;
       align-items: flex-start;
-      height: 5500px;
+      height: 11450px;
+      @media (max-width: $md-max) {
+        height: 9600px;
+      }
+      @media (max-width: $md-max) {
+        height: 8500px;
+      }
       @media (max-width: $xs-max) {
         align-content: center;
         height: unset;

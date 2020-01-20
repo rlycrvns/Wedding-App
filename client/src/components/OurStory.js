@@ -382,6 +382,214 @@ export default class OurStory extends Component {
                 />
                 <div className='caption'>Riley&apos;s Graduation</div>
               </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/32.jpg'
+                  alt='Oregon Country Fair Round 2'
+                />
+                <div className='caption'>Oregon Country Fair Round 2</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/33.jpg'
+                  alt='Mopeds in Ocean Shores'
+                />
+                <div className='caption'>Mopeds in Ocean Shores</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/34.jpg'
+                  alt='Renting our first house'
+                />
+                <div className='caption'>Renting our first house</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/35.jpg'
+                  alt='Fall on Sauvie Island'
+                />
+                <div className='caption'>Fall on Sauvie Island</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/36.jpg'
+                  alt='Date night babes'
+                />
+                <div className='caption'>Date night babes</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/37.jpg'
+                  alt='NYE in Prineville'
+                />
+                <div className='caption'>NYE in Prineville</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/38.jpg'
+                  alt='Mask partners'
+                />
+                <div className='caption'>Mask partners</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/39.jpg'
+                  alt='Snuggle bubs'
+                />
+                <div className='caption'>Snuggle bubs</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/40.jpg'
+                  alt='Another trip to the beach cabin'
+                />
+                <div className='caption'>Another trip to the beach cabin</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/41.jpg'
+                  alt='Ocean Shores Forever'
+                />
+                <div className='caption'>Ocean Shores Forever</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/57.jpg'
+                  alt='We love photobooths'
+                />
+                <div className='caption'>We love photobooths</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/42.jpg'
+                  alt='Re-doing our first photobooth'
+                />
+                <div className='caption'>Re-doing our first photobooth</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/43.jpg'
+                  alt='She said Yes in Zion'
+                />
+                <div className='caption'>She said Yes in Zion</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/44.jpg'
+                  alt='May 21, 2019'
+                />
+                <div className='caption'>May 21, 2019</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/45.jpg'
+                  alt='Pine Creek, Zion National Park'
+                />
+                <div className='caption'>Pine Creek, Zion National Park</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/46.jpg'
+                  alt='Re-doing our first photobooth'
+                />
+                <div className='caption'>😍</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/47.jpg'
+                  alt='Visiting the Grand Canyon'
+                />
+                <div className='caption'>Visiting the Grand Canyon</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/48.jpg'
+                  alt='Joshua Tree'
+                />
+                <div className='caption'>Joshua Tree</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/49.jpg'
+                  alt='Twin Peaks, San Francisco'
+                />
+                <div className='caption'>Twin Peaks, San Francisco</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/50.jpg'
+                  alt='He said Yes, Wind Mountain'
+                />
+                <div className='caption'>He said Yes, Wind Mountain</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/51.jpg'
+                  alt="Camping on Wy'East"
+                />
+                <div className='caption'>Camping on Wy&apos;East</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/52.jpg'
+                  alt='We love photobooths'
+                />
+                <div className='caption'>We love photobooths</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/53.jpg'
+                  alt='We love photobooths'
+                />
+                <div className='caption'>We love photobooths</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/54.jpg'
+                  alt='We love photobooths'
+                />
+                <div className='caption'>We love photobooths</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/55.jpg'
+                  alt='We love photobooths'
+                />
+                <div className='caption'>We love photobooths</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/56.jpg'
+                  alt='We love photobooths'
+                />
+                <div className='caption'>We love photobooths</div>
+              </div>
             </div>
           </div>
         </div>
