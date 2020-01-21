@@ -102,22 +102,22 @@
       flex-flow: column wrap;
       align-content: space-around;
       align-items: flex-start;
-      height: 11450px;
+      height: 8800px;
       @media (max-width: $md-max) {
-        height: 9600px;
+        height: 7500px;
       }
-      @media (max-width: $md-max) {
-        height: 8500px;
+      @media (max-width: $sm-max) {
+        height: 6600px;
       }
       @media (max-width: $xs-max) {
         align-content: center;
         height: unset;
       }
       .photo {
-        width: 32%;
+        width: 25%;
         margin-bottom: 2%;
         @media (max-width: $sm-max) {
-          width: 38%;
+          width: 30%;
         }
         @media (max-width: $xs-max) {
           width: 80%;

@@ -329,26 +329,6 @@ export default class OurStory extends Component {
               <div className='photo'>
                 <img
                   loading='lazy'
-                  src='/img/photos/24.jpg'
-                  alt='At the beach cabin'
-                />
-                <div className='caption'>At the beach cabin</div>
-              </div>
-              <div className='photo'>
-                <img loading='lazy' src='/img/photos/25.jpg' alt='Beach Meow' />
-                <div className='caption'>Beach Meow</div>
-              </div>
-              <div className='photo'>
-                <img
-                  loading='lazy'
-                  src='/img/photos/26.jpg'
-                  alt='1 year anniversary'
-                />
-                <div className='caption'>1 year anniversary</div>
-              </div>
-              <div className='photo'>
-                <img
-                  loading='lazy'
                   src='/img/photos/27.jpg'
                   alt='We like the coast okay'
                 />
@@ -473,6 +453,22 @@ export default class OurStory extends Component {
               <div className='photo'>
                 <img
                   loading='lazy'
+                  src='/img/photos/24.jpg'
+                  alt='At the beach cabin'
+                />
+                <div className='caption'>At the beach cabin</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
+                  src='/img/photos/26.jpg'
+                  alt='1 year anniversary'
+                />
+                <div className='caption'>1 year anniversary</div>
+              </div>
+              <div className='photo'>
+                <img
+                  loading='lazy'
                   src='/img/photos/42.jpg'
                   alt='Re-doing our first photobooth'
                 />
@@ -589,6 +585,10 @@ export default class OurStory extends Component {
                   alt='We love photobooths'
                 />
                 <div className='caption'>We love photobooths</div>
+              </div>
+              <div className='photo'>
+                <img loading='lazy' src='/img/photos/25.jpg' alt='Beach Meow' />
+                <div className='caption'>Beach Meow</div>
               </div>
             </div>
           </div>
