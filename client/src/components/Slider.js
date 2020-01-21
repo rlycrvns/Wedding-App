@@ -3,7 +3,7 @@ import { Carousel, CarouselItem, CarouselControl } from 'reactstrap';
 
 const items = [
   {
-    src: '/img/slides/slide10.jpg',
+    src: '/img/slides/slide0.jpg',
     altText: 'Jessica and Riley by Michelle Breiter'
   },
   {
