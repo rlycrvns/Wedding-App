@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl } from 'reactstrap';
 
 const items = [
   {
@@ -91,10 +85,6 @@ const Slider = props => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
-        />
       </CarouselItem>
     );
   });
