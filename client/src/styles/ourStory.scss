@@ -120,7 +120,7 @@
           width: 30%;
         }
         @media (max-width: $xs-max) {
-          width: 80%;
+          width: 100%;
         }
 
         img {
@@ -138,39 +138,6 @@
           margin-top: 8px;
           font-family: $ff-body, sans-serif;
         }
-      }
-    }
-    .carousel {
-      @media (min-width: $lg-min) {
-        margin: 0 auto;
-        max-width: 800px;
-      }
-      @media (max-width: $md-max) {
-        display: none;
-      }
-      .carousel-inner {
-        border-radius: 50%;
-        width: 100%;
-        margin: 0 auto;
-        display: block;
-        .carousel-item {
-          img {
-            width: 100%;
-          }
-          .carousel-caption {
-            display: none !important;
-          }
-        }
-      }
-    }
-    .carousel-mobile {
-      @media (min-width: $lg-min) {
-        display: none;
-      }
-      margin: 0 auto;
-      max-width: 800px;
-      .slider-img {
-        width: 100%;
       }
     }
   }
