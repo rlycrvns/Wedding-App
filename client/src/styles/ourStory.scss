@@ -116,11 +116,13 @@
       .photo {
         width: 25%;
         margin-bottom: 2%;
+        margin-right: auto;
+        margin-left: auto;
         @media (max-width: $sm-max) {
           width: 30%;
         }
         @media (max-width: $xs-max) {
-          width: 100%;
+          width: 85%;
         }
 
         img {
