@@ -74,7 +74,7 @@
             font-size: 22px;
           }
           span {
-            display: block;
+            color: $rust;
             font-size: 20px;
             line-height: 2;
           }
@@ -84,6 +84,10 @@
           .faq-body {
             font-size: 20px;
           }
+        }
+        h4 {
+          color: $dark-green;
+          font-size: 22px;
         }
         &:after {
           content: url(/img/lite-green-stroke.png);
