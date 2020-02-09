@@ -78,6 +78,12 @@ export default class Details extends Component {
                   and enjoy this special moment with us.
                 </h4>
               </div>
+              <div className='info-block'>
+                <h2>Registry</h2>
+                <h3>
+                  Check Back Once You have Received your formal invitation
+                </h3>
+              </div>
             </div>
           </div>
         </div>
