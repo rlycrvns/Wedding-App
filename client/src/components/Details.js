@@ -56,6 +56,7 @@ export default class Details extends Component {
                   <span>Attire:</span>
                 </h3>
                 <h4>Semi-Formal</h4>
+                <h4>Light Coat Recommended</h4>
                 <h4>Ceremony will be held on a lawn, beware of heels</h4>
                 <h3>
                   <span>Food and Drink:</span>
@@ -66,16 +67,16 @@ export default class Details extends Component {
                   <span>Children:</span>
                 </h3>
                 <h4>
-                  To allow all guests to relax and enjoy themselves, we have
-                  chosen to make our special day 21+ only. We thank you for your
-                  understanding.
+                  To allow all wedding guests, including parents, a night of
+                  relaxation and partying, we have chosen to make our special
+                  day 21+ only
                 </h4>
                 <h3>
                   <span>Unplugged Ceremony:</span>
                 </h3>
                 <h4>
                   We invite you to be fully present. Kindly turn off all devices
-                  and enjoy this special moment with us.
+                  and enjoy this special moment with us
                 </h4>
               </div>
               <div className='info-block'>
