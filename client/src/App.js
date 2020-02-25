@@ -20,10 +20,10 @@ const Main = () => (
   <main className='content'>
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route exact path='/components/details' component={Details} />
-      <Route exact path='/components/ourstory' component={OurStory} />
-      <Route exact path='/components/suggestasong' component={SuggestASong} />
-      <Route exact path='/components/rsvp' component={RSVP} />
+      <Route exact path='/details' component={Details} />
+      <Route exact path='/ourstory' component={OurStory} />
+      <Route exact path='/suggestasong' component={SuggestASong} />
+      <Route exact path='/rsvp' component={RSVP} />
     </Switch>
   </main>
 );
