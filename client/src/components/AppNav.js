@@ -23,11 +23,7 @@ const AppNav = props => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                onClick={toggleNavbar}
-                tag={RRNavLink}
-                to='/components/details'
-              >
+              <NavLink onClick={toggleNavbar} tag={RRNavLink} to='/details'>
                 Details
               </NavLink>
             </NavItem>
@@ -44,17 +40,13 @@ const AppNav = props => {
               <NavLink
                 onClick={toggleNavbar}
                 tag={RRNavLink}
-                to='/components/suggestasong'
+                to='/suggestasong'
               >
                 Suggest a Song
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                onClick={toggleNavbar}
-                tag={RRNavLink}
-                to='/components/rsvp'
-              >
+              <NavLink onClick={toggleNavbar} tag={RRNavLink} to='/rsvp'>
                 RSVP
               </NavLink>
             </NavItem>
