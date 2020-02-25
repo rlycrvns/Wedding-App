@@ -28,11 +28,7 @@ const AppNav = props => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                onClick={toggleNavbar}
-                tag={RRNavLink}
-                to='/components/ourstory'
-              >
+              <NavLink onClick={toggleNavbar} tag={RRNavLink} to='/ourstory'>
                 Our Story
               </NavLink>
             </NavItem>
