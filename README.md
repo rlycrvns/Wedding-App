@@ -1,4 +1,4 @@
-# A full stack web app built using MongoDb, Express, React and Node - Deployed with Github and Heroku - Built with VSCode
+# A full stack web app built using MongoDb, Express, React/Redux and Node - Deployed with Github and Heroku - Built with VSCode
 
 ### I built this as the website for my wedding on September 6, 2020 [View it Live!](https://www.rileyandjessica.com/)
 
