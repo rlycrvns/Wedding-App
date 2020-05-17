@@ -25,8 +25,15 @@ export default class Details extends Component {
             <h1>Details</h1>
             <div className='info-body'>
               <div className='info-block'>
+                <h2>Change of Date:</h2>
+                <h3>
+                  Out of concern for our loved ones, we have decided to portpone
+                  our wedding until Sunday, September 5, 2021.
+                </h3>
+              </div>
+              <div className='info-block'>
                 <h2>When:</h2>
-                <h3>September 6, 2020</h3>
+                <h3>September 5, 2021</h3>
                 <h3>Arrival at 5:00 PM</h3>
                 <h3>Outdoor Ceremony at 5:30 PM</h3>
                 <h3>Outdoor Reception to Follow On-site</h3>

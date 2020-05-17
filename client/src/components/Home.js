@@ -35,7 +35,7 @@ export default class Home extends Component {
           <div className='index-info'>
             <div className='info'>
               <h2>
-                <span>September 6, 2020</span>
+                <span>September 5, 2021</span>
                 <span>Portland, Oregon </span>
               </h2>
             </div>
